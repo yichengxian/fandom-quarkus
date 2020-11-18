@@ -2,7 +2,6 @@ package com.j2boot.fandom.common.exception;
 
 
 import com.j2boot.fandom.common.result.ResultCode;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
@@ -41,6 +40,7 @@ public class BaseException extends RuntimeException {
      */
     public BaseException(String msg){
         super(msg);
+        this.resultCode =ResultCode.FAILED;
     }
 
 

@@ -1,6 +1,7 @@
-package com.j2boot.fandom.biz.index.service.impl;
+package com.j2boot.fandom.api.biz.index.service.impl;
 
-import com.j2boot.fandom.biz.index.service.IndexService;
+
+import com.j2boot.fandom.api.biz.index.service.IndexService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +16,7 @@ public class IndexServiceImpl implements IndexService {
      */
     @Override
     public String index() {
+        //
         return "hello world";
     }
 }

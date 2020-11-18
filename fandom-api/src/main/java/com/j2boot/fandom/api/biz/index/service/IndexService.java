@@ -1,4 +1,4 @@
-package com.j2boot.fandom.biz.index.service;
+package com.j2boot.fandom.api.biz.index.service;
 
 /**
  * @author yichengxian

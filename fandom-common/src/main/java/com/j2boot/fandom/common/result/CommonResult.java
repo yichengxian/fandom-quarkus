@@ -1,7 +1,6 @@
 package com.j2boot.fandom.common.result;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 
 /**

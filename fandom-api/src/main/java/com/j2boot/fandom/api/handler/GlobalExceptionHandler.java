@@ -1,5 +1,6 @@
-package com.j2boot.fandom.common.exception;
+package com.j2boot.fandom.api.handler;
 
+import com.j2boot.fandom.common.exception.BaseException;
 import com.j2boot.fandom.common.result.CommonResult;
 import com.j2boot.fandom.common.result.ResultCode;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -34,8 +35,9 @@ public class GlobalExceptionHandler {
     public CommonResult baseExceptionHandler(BaseException baseException){
         //
         ResultCode resultCode = baseException.getResultCode();
-
-        return new CommonResult(resultCode.getCode(),resultCode.getMsg());
+        CommonResult result = new CommonResult(resultCode.getCode(), baseException.getMessage());
+        return result;
     }
 
 }
+
